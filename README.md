@@ -1,1 +1,1 @@
-Notes about biotecknologies
+Notes about biotechnologies

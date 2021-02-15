@@ -1,0 +1,7 @@
+# ignore .Rhistory
+.Rhistory
+
+# ignore files
+*.pdf
+*.xml
+*.html

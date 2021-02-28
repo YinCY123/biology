@@ -1,0 +1,73 @@
+---
+title: "molecular biology"
+author: "yincy"
+date: "2/26/2021"
+output:
+    bookdown::html_document2
+
+bibliography: 
+- ../Data/mendeley-bib/Molecular Biology.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Self-cleavage peptides
+
+|**Name**|**Sequence**|
+|:----|:----|
+|**E2A**|5'-GGAAGCGGA CAGTGTACTAATTATGCTCTCTTGAAATTGGCTGGAGATGTTGAGAGCAACCCTGGACCTA-3'|
+|**F2A**|5'-GGAAGCGGA GTGAAACAGACTTTGAATTTTGACCTTCTCAAGTTGGCGGGAGACGTGGAGTCCAACCCTGGACCTA-3'|
+|**P2A**|5'-GGAAGCGGA GCTACTAACTTCAGCCTGCTGAAGCAGGCTGGAGACGTGGAGGAGAACCCTGGACCTA-3'|
+|**T2A**|5'-GGAAGCGGA GAGGGCAGAGGAAGTCTGCTAACATGCGGTGACGTCGAGGAGAATCCTGGACCTA3'|
+
+- from paper PMID: 21602908, 9010280  
+- nine nucleotides from better efficience  
+- Ryan and colleagues reported that introduction of C-terminal five amino acids (APVKQ) of an foot and mouth disease virus (FMDV) 2A peptide increased the efficiency by 13% in vivo.  
+
+
+# Secreted peptides
+|**Name**|**Protin ID**|**Location**|
+|:--|:--|:--|
+|erythropoietin precursor|NP_000790|1-27|
+|leukemia inhibitory factor isoform 1 precursor|NP_002300|1-22|
+|interleukin-6 isoform 1 precursor|NP_000591|1-29|
+|insulin,isoform 2 precursor|NP_001035835|1-24|
+|vascular endothelial growth factor receptor 1 isoform 1 precursor|NP_002010|1-26|
+
+
+# Kozak Sequence
+- Sequence: GCCACCATGG  
+- Function: vertebrate consensus sequence for strong initiation of translation [@Kozak1987]
+
+
+# SV40 NLS
+- Sequence: CCCAAGAAAAAGCGGAAGGTG  
+- Function: nuclear localization signal of SV40 large T antigen  
+
+
+# Tat (plasma membrane penetrate peptides)
+- Sequence: TATGGCAGGAAGAAGCGGAGACAGCGACGAAGA  
+- Function: penetrate cell plasma membrane from outside  
+
+
+# Odc1 (protein decay accelerator peptides)
+- Sequence: agccatggcttcccgccggaggtggaggagcaggatgatggcacgctgcccatgtcttgtgcccaggagagcgggatggaccgtcaccctgcagcctgtgcttctgctaggatcaatgtg  
+- Function: the half-life time of protein decreased to 2 hours when conjugate at the C-terminal.  
+
+
+# RT-PCR reference genes  
+|**Organ**|**gene**|
+|:---|:--|
+|heart|18s|
+|liver|TBP|
+|lung|HMBS|
+|spleen|18s|
+|muscle|GAPDH|
+|stomach|b-actin|
+|ovary|b-actin|
+|kidney|HPRT1|
+
+# Refrences

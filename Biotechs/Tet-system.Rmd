@@ -2,7 +2,12 @@
 title: "Tet system"
 author: "yincy"
 date: "3/1/2021"
-output: html_document
+output: 
+    html_document:
+        toc: true
+        toc_float: true
+        theme: "paper"
+        number_sections: true
 ---
 
 ```{r setup, include=FALSE}
@@ -20,7 +25,7 @@ Bacterial systems were tested for functionality in mammalian cells. The lac syst
 - Tetracycline-dependent promoters are developed by placing a TRE **<a style='color:red'>upstream </a>** of a minimal promoter.  
 
 # Tetracycline Off System  
-In the Tet-Off expression system, a tetracycline-controlled transactivator protein (tTA), which is composed of the Tet repressor DNA binding protein (TetR) from the Tc resistance operon of Escherichia coli transposon Tn10 fused to the strong transactivating domain of VP16 from Herpes simplex virus, regulates expression of a target gene that is under transcriptional control of a tetracycline-responsive promoter element (TRE).  
+In the Tet-Off expression system, a tetracycline-controlled transactivator protein (tTA), which is composed of the Tet repressor DNA binding protein (TetR) from the Tc resistance operon of Escherichia coli transposon Tn10 fused to the strong transactivating domain of VP16 from Herpes simplex virus, regulates expression of a target gene that is under transcriptional control of a <a style='color:red'>tetracycline-responsive promoter element</a> **(TRE)**.  
 
 The TRE is made up of Tet operator (tetO) sequence concatemers fused to a minimal promoter, (commonly the minimal promoter sequence derived from the human cytomegalovirus (hCMV) immediate-early promoter). In the absence of Tc or Dox, tTA binds to the TRE and activates transcription of the target gene. In the presence of Tc or Dox, tTA cannot bind to the TRE, and expression from the target gene remains inactive.  
 

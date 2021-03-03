@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-CREATE, short for Cre recombination-based AAV targeted evolution, that enables the development of AAV capsids that more efficiently transduce defined Cre-expression cell populations *in vivo*.  
+CREATE (Cre recombination-based AAV targeted evolution), that enables the development of AAV capsids that more efficiently transduce defined Cre-expression cell populations *in vivo*.  
 
 
 

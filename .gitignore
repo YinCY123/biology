@@ -2,6 +2,11 @@
 .Rhistory
 
 # ignore files
-*.pdf
 *.xml
 *.html
+
+# ignore figures
+*.jpg
+*.jpeg
+*.tiff # R generated
+#*.png # in file figures

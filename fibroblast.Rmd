@@ -1,0 +1,30 @@
+---
+title: "fibroblast"
+author: "YinCY"
+date: "7/6/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Main difference between Fibroblast and fibrocyte
+Fibroblast and fibrocyte are two stages of a fiber-producing cell found in the connective tissues. Fibroblast and fibrocyte differ in morphology, activeness, and biological function in the body. The **main difference** between fibroblast and fibrocyte is that fibroblast is a large, flat cell with an oval-shaped nucleus involved in the secretion of the extracellular matrix, collagen, and other extracellular macromolecules whereas fibrocyte is a small cell and is the inactive form of the fibroblast.  
+
+Fibroblasts play an important role in wound healing. Moreover, fibroblasts are capable of differentiating into various other cell types in the connective tissue such as osteoblasts, chondroblasts, and collagenoblasts.  
+
+## Fibroblast
+A fibroblast is an immature, fiber-producing cell found in the connective tissue. Fibroblasts are large flat cells, containing an oval shaped nucleus. They also consist of elongated structures, which protrude from the cell body. Therefore, the actual shape of a fibroblast can be spindle-shaped. Active fibroblasts comprise many endoplasmic reticula in their cytoplasm. Since the cytoplasm of fibroblasts is basophilic, it is stained in purplish blue by the H&E stain. Typically, primitive mesenchymal cells give rise to fibroblasts. In certain situations, epithelial cells may also give rise to fibroblasts through epithelial-mesenchymal transition (EMT). Fibroblasts maintain the structural integrity of connective tissues through the formation of the structural framework (stroma) of animal tissue. Fibroblasts secrete the components of the extracellular matrix such as collagen, glycosaminoglycans, reticular and elastin fibers, glycoproteins, and other extracellular macromolecules. This leads to isolation and repair of damaged tissues.  
+
+Fibroblasts display a remarkable ability to differentiate into the other members of the connective tissue cells family, such as osteoblasts, chondroblasts, and collagenoblasts. Fibroblasts play a critical role in wound healing as well. In a tissue injury, the nearby pericytes are differentiated into fibroblasts. These fibroblasts migrate into the place of injury or wound to form a large collagenous matrix. The contractile fibroblasts assist the contraction of the wound. The contractile fibroblasts are also called **myofibroblasts**. The alterations in the metabolism of fibroblasts may lead to wound healing defects such as fibrosis.  
+
+Fibroblasts can be considered the least specialized cell type in the connective tissue, which is capable of differentiating into several cell types such as osteoblasts, chondroblasts, and collagenoblasts.  
+
+## Fibrocyte
+The inactive form of fibroblast is known as fibrocyte. Fibrocytes can be considered as mesenchymal cells with a small cytoplasm. Fibrocytes contain a few rough endoplasmic reticulum. Therefore, fibrocytes produce fewer proteins. The blood-born cells, which leave the blood and enter the tissue to become fibroblasts are also called fibrocytes.  
+
+## Conclusion
+Fibroblast and fibrocyte are two stages of fiber-producing cells in the connective tissue. A fibroblast is the active form whereas the fibrocyte is the inactive form. This is the main difference between fibroblast and fibrocyte. Fibroblasts contain a prominent cytoplasm along with many endoplasmic reticuli. Fibroblasts secrete collagens and other components of the extracellular matrix. Both fibroblasts and fibrocytes are involved in the tissue repair.  
+
+

@@ -50,7 +50,7 @@ knitr::include_graphics("figures/Cre-loxP-rearrangements.png")
 To facilitate the use of Cre-lox technology, transgenic mice have been constructed that express Cre under a varity of ubiquitous and regulated promoters, and many loxP-containing alleles have also been constructed. Additionally, Cre-containing adenovirus (Ad-Cre) or AAV ([AAV-pgk-Cre](https://www.addgene.org/24593/)) has been used to successfully introduce Cre into cells of interest.  
 
 
-# Two separate recombination evets
+# Two separate recombination events
 One potential limitation of using loxP sites is the inability to tightly control which loxP sites recombine if more than two are present; intramolecular events happen with greater frequency than intermolecular events, but any two sites can potentially recombine. To account for this, alternate mutant versions of the loxP site have been created, which contain a unique asymmetric spacer "NNNTANNN", where "N" indicates which bases may vary from the canonical sequence. Among these are loxN (GtATACcT), lox2272 (GgATACtT), and lox511 (GtATACAT). These variant lox sites undergo recombination with other sites of the same type, but are not cross-compatible. Using different lox site variants allows Cre to catalyze more than one specific recombination event in a single system.  
 
 The Saccharomyces cerevisiae FLP-FRT recombination system is another site-directed recombination technology very conceptually similar to Cre-lox, with flippase (Flp) and the short flippase recognition target (FRT) site being analogous to Cre and loxP, respectively. The FLP-FRT technology can be an effective alternative to Cre-lox, and has also been used in conjunction with it, allowing for two separate recombination events to be controlled in parallel.  

@@ -1,0 +1,32 @@
+---
+title: "imageJ Tips and Tricks"
+author: "YinCY"
+date: "9/8/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+1. Files can be opened quickly by dragging them (e.g. from the desktop, Windows Explorer or the Mac Finder) onto the `Status bar`. Most plugins you might download can also be installed this way.  
+
+2. If you know the name of a command (including plugins) but forget where it is hidden amidst the menus, type Ctrl+L (or perhaps just L) to bring up the `Command Finder` – it may help to think of it as a List – and start typing the name. You can run the command directly, or select `Show full information` to find out its containing menu. Note that some commands have similar or identical names, in which case they might only be distinguishable by their menu.  
+
+3. ImageJ’s `Edit -> Undo` has very limited abilities – it may be available if you modify a single 2D image, but will not be if you process data with more dimensions (see Dimensions). While inconvenient if you are used to long undo-lists in software like Microsoft Word or Adobe Photoshop, there is a good rationale behind it: supporting undo could require storing multiple copies of previous versions of the image, which might rapidly use up all the available memory when using large data sets. The solution is to take care of this manually yourself by choosing `Image -> Duplicate...` to create a copy of the image before doing any processing you may not wish to keep.  
+
+4. There is a wide range of shortcut keys available. Although the menus claim you need to type Ctrl, you do not really unless the option under `Edit -> Options -> Misc...` tells you otherwise. You can also add more shortcuts under `Plugins -> Shortcuts -> Create Shortcut...`.  
+
+5. To remove around large images, you can use the `scroll tool`, or simply click and drag on the iamge while holding down the `spacebar`. A small rectangular diagram (visible on the top left of the image window) indicates which part of the entire image is currently being shown.  
+
+6. There are more tools and options than meet the eye. Double-clicking and right-clicking on icons in the `Tool bar` can each reveal more possibilities.  
+
+7. Pressing `Escape` may abort the operation of any currently-running command... But it requires the command's author to have implemented this functionality. So it might not do anything.  
+
+
+# Pixel squareness
+Talking of pixels as having (usually) equal widths and heights makes them sound very square-like, but earlier I stated that pixels are not squares – they are just displayed using squares.  
+
+This slightly murky philosophical distinction is considered in Alvy Ray Smith’s technical memo (right), the title of which gives a good impression of the central thesis.[4] In short, pushing the pixels-are-square model too far leads to confusion in the end (e.g. what would happen at their 'edges'?), and does not really match up to the realities of how images are recorded (i.e. pixel values are not determined by detecting light emitted from little square regions, see Blur & the PSF). Alternative terms, such as sampling distance, are often used instead of pixel sizes – and are potentially less misleading. But ImageJ uses pixel size, so we will as well.  
+
+

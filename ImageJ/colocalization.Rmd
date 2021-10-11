@@ -9,6 +9,18 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Image Types 
+Digital Images are two-dimensional grids of pixel intensities values with the width and height of the image being defined by the number of pixels in x (rows) and y (columns) direction. Thus, pixels (picture elements) are the smallest single components of images, holding numeric values – pixel intensities – that range between black and white. The characteristics of this range, i.e., the number of unique intensity (brightness) values that can exist in the image is defined as the bit–depth of the image and specifies the level of precision in which intensities are coded, e.g.: A 2–bit image has 2^2 = 4 tones: 00 (black), 01 (gray), 10 (gray), and 11 (white). A 4–bit image has 2^4 = 16 tones ranging from 0000 (0) to 1111 (16), etc. In terms of bits per pixel (bpp), the most frequent types of images (Image -> Type ->) that ImageJ deals with are:  
+
+- 8-bit: Images that can display 256 (2^8) gray levels (integers only).  
+- 16-bit: Images that can display 65536 (2^16) gray levels (integers only).  
+- 32-bit: Images that can display 4294967296 (2^32) gray levels (real numbers). In 32-bit images, pixels are described by floating point values and can have ANY intensity value including NaN (Not a Number).  
+
+RGB Color: Color images that can display 256 values in the Red, Green and Blue channel. These are 24-bit (2^3x8) images. RGB color images can also be 32-bit color images (24-bit color images with additional eight bits coding alpha blending values, i.e., transparency).  
+
+
+
+
 # methods of colocalization analysis
 ## pixel intensity-based
 In intensity-based correlation analyses, the pixel/voxel values in the image are directly used in the evaluation of spatial correlation. These can be broadly divided into two types: pixel matching colocalization analyses, and cross-correlation function based analyses.  

@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # Background  
-To advance the study of gene function, scientists were in search of inducible promoters of controlling eukaryotic gene expression. Several endogenous promoters had been identified that responded to stimuli, such as hormones or metal ions; however, these systems were confounded by secondary effects. Scientists began to pursue a non-endogeous system for eukaryotes. At the time, bacterial systems from E.coli presented the best candidayes for inducible expression.  
+To advance the study of gene function, scientists were in search of inducible promoters of controlling eukaryotic gene expression. Several endogenous promoters had been identified that responded to stimuli, such as hormones or metal ions; however, these systems were confounded by secondary effects. Scientists began to pursue a non-endogeous system for eukaryotes. At the time, bacterial systems from *E.coli* presented the best candidates for inducible expression.  
 
 Bacterial systems were tested for functionality in mammalian cells. The lac system with the IPTG inducer was tested first, and IPTG was found to be inefficient, resulting in low levels of induction. In 1992, Manfred Gossen and Hermann tested the tet system in a mammalian system (Hela) and found that tet system was functional, and had rapid induction with efficient tettracyline uptake.  
 

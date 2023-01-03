@@ -1,0 +1,176 @@
+---
+title: "AAV Production in HEK293T Cells"
+author: "yincy"
+date: "2022-12-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Introduction
+This protocol can be used to produce from one Five Chambers Cell-Stack (CF5)(3180 cm^2 - the same surface area as 21 x T-150 flasks). Cell stacks an provide an efficient means to scale-up without having to handle a large amount of T-150 flasks.
+
+# Workflow Timeline
+- day 0: seed cells in CF2  
+- day 2: seed cells in CF5  
+- day 3: Transfect cells  
+- day 7(am): Harvest cells
+
+# Equipment
+- Biosafety cabinet  
+- Pipetman  
+- Pipettors  
+- Pipettes  
+- Incubator  
+- Sterile bars  
+
+# Regents  
+- Adherent HEK293T cells (ideally AAV-293T clones)  
+- DMEM high glucose with L-glutamine and 1 mM pyruvate  
+- T-150 flask (Corning, 150 cm^2)  
+- Opti-MEM  
+- FIve chamber cell stack (CF5, Corning, 3180 cm^2)  
+- 1 x PBS pH 7.4
+- Heat-inactivated FBS (HI-FBS)  
+    > Different brands and lots of FBS can promote or inhibit transfection. Test a varity of brands and lots of FBS to find one suitable for your protocols. FBS can be purchased already heat inactivated or it can be inactivated in the lab by heating to 56 ℃ for 30 mins.
+
+
+- 1 mg/ml Polyethyenimine (PEI) 25 KDa MW.  
+    > Other transfection regents may be used in this protocol, but their conditions must be optimized.  
+    
+- 0.45 um polyethersulfone (PES) filter system.  
+    > Do not use filters made of materials other than PES. AAV particles stick to many other surfaces, but do not stick to PES. Using a PES filter will maximize titer.  
+    
+- plasmids for transfection: pHelper; pRC (Rep-Cap), plasmids expression your gene of interest.  
+- Triton X-100  
+- Benzonase / DNAse I  
+- 40% Polyethylene Glycol 8000 (PEG)  
+- RNase-free DNAse  
+- Pipettes  
+
+
+# Regent Preparation
+- DMEM Complete: 10% v/v FBS and 4 mM L-alanyl-L-glutamine. To a 500 ml bottle of DMEM high glucose, add 55 ml of heat inactivated FBS and 11 ml of 200 mM L-alanyl-L-glutamine. Store at 4℃.
+
+- 1 mg/ml polyethylenimine (PEI) solution:  
+    + Dissolve 100 mg of PEI powder into 100 ml of deionized water.  
+    + While stirring, slowly add hydrochloric acid until the solution clears.  
+    + Check the pH of the solution and use hydrochloric acid or sodium hydroxide to adjust the pH to 7.0.  
+        > **Pro-Tip** The pH of this solution will drift pretty rapidly upon addtion of acid or base. Add only a few drops at a time. Allow them to mix and recheck the pH to prevent over or undershooting the desired pH.  
+        
+    + Allow the solution to mix for 10 min and then recheck the pH to ensure that it has not drifted.  
+    + Filter the solution through a 0.22 um membrane.  
+    + Aliquote 500 - 100 ul into sterile tubes.  
+    + Store the tubes at -80℃.  
+    + After thawing, the solution can be stored at 4 ℃ for up to 2 months. After 2 months, discard the tube and thaw a new working stock.  
+- 40% Polyethylene glycol (PEG) 8000 solution  
+    + Dissolve 400 g of PEG 8000 and 24 g of NaCl into ddWater and adjust to a final volume of 1000ml.  
+    + Stir at room temperature until fully dissolved.  
+        > **Pro-Tip** This step is challenging due to the high viscosity of PEG. Stirring under medium heat will promote faster dissolution.  
+    
+    + Adjust the pH to ~ 7.4.  
+    + Autoclave or sterile filter.  
+        **Pro-Tip** Stirring during the cooling period is recommended or the solution may separate into phases.  
+        
+    + Aliquot and store at 4℃.  
+    
+- Considerations Before You Start  
+The health of the HEK293T cells is critical for optimal AAV yield.  
+
+    + Do not overgrow your cells. Pass the cells twice a week during the maintenance phase and do not allow cells to reach 100% confluence (80 -90% is ideal).  
+
+    + Pass and plate the cells thet day before the transfection.  
+    + Thaw a new vial cells after 30 passages.  
+
+- Procedure  
+1. Trypsinize and resuspend the HEK293T packaging cells from 2 x T-150 flasks. Cells should be at ~ 80%confluence. For each T-150 flask:  
+    + Aspirate culture media and rinse once with 10 ml PBS.  
+    + Aspirate PBS and add 4 ml of 0.05% Trypsin/EDTA. Wait ~ 2min.  
+    + Neutralize trypsin by adding 4 ml of HI-FBS.  
+    + Pipet back and forth vigorously multiple times to obtain a single cell suspension (no clumps of cells).  
+2. Pool cells from 2x T-150 flasks. Adjust volume to 200 ml with DMEM complete media and mix.  
+3. Seed all cells in CF2. Return to incubator for 48h.  
+4. Trypsinize and resuspend cells from the CF2. Cells should ne at ~80% confluence.  
+    + Aspirate culture media and rinse once with 60 ml PBS.  
+    + Aspirate PBS and add 35 ml of 0.05% Trypsin/EDTA.  
+    + While waiting for the cells to lift-up, aliquot 5 ml of HI-FBS to a sterile 100 ml plastic bottle.  
+    + Gently tap the sides of the CF2 to help detatch the cells, then transfer the cells into the bottle containing 5 ml of HI-FBS to neutralize the trypsin.   
+    + Pipette back and forth vigorously to obtain a single cell suspension (no clumps).  
+    + Add 435 ml of complete medium (final volume 500 ml).  
+5. Seed 250 million of cells from the CF2 into 1 CF5. Return to incubator for 24 h - 36 h.  
+6. Proceed with transfection:  
+    + Calculate the amount of each plasmid needed to have a 1:1:1 molar ratio with 2 mg total DNA per CF5 
+    
+    |**plasmid**|**plasmid Size (bp)**|**DNA Concentration (ug/ul)**|**Volume of DNA (ul)**|
+    |:--|:--|:--|:--|
+    |RepCap|7256|1.0|727.6|
+    |pHelper|11854|1.0|1185|
+    |Transfer Plasmid|5842|1.0|584.2|
+    |Total bp|24961|||
+    In total, we would like 2.5mg of DNA or 2500ug.  
+    Using the total number of base pairs from all three plasmid, we can determing the total ug/bp we need to achieve a 1:1 molar ratio of each plasmid:  
+    
+    2500ug/24961 bp = 0.10 ug/bp  
+    Therefore, for each plasmid we need:  
+    
+    **RepCap**: 0.1 ug/bp x 7265 bp = 727.6 ug
+    **pHelper**: 0.1ug/bp x 11854 bp  1185.4 ug  
+    **Transfer Plasmid**: 0.1 ug/bp x 842 bp = 854.2ug
+    
+    + Aliquot 176 ml of Opti-MEM into a sterile 250 ml bottle.  
+    + Aliquot 350 ml of DMEM + 2% HI-FBS into a sterile 500 ml bottle.  
+    + Add the plasmid DNAinto the bottle containing the Opti-MEM. Mix well.  
+    + Add 7.5 ml of PEI (1:3 ug DNA to ug PEI ratio). Shake the bottle up-down vigorously for 30 seconds (it's okay to make bubbles).  
+    + Incubate at room temperature for 15 min. Note that longer incubatio times can reduce transfection efficiency.  
+    + Take the CF5 out of the incubator and pour the media into a waste container.  
+    + Carefully add the Opti-MEM + DNA+ PEI solution to the CF5. Make sure that all five layers are covered with media. 293T cells are delicate and detach very easily-media should always be added away from the cells (not poured on them) and can be adjusted by carefully tilting the CF5 back and forth.  
+        > **Pro-Tip** To help distribute the media amongst the five layers, tilt the CF5 such that the media goes toward the cap. If the media touches the cap, replace it with a new one before putting the CF5 in the incubator.  
+    
+    + Return the CF5 to the incubator for 96h. This incubation time can be adjusted depending upon the serotype. Often AAV2 are harvest at 48 - 72h, while other serotypes are harvest at 96 - 120h.  
+
+7. Harvest cells and media by tapping the sides of the CF5 on a soft surface. Cells should be detached easily.  
+8. Transfer cells and media into 50 ml conical tubes (or 500 ml conical vessels).  
+9. Rinse CF5 once with 20 ml of PBS and add to a new 50 ml conical tube.  
+10. Centrifuge at 1000g for 10 min at 4℃ to pellet the cells.  
+11. Keep the cell pellet on ice and transfer supernatant to a sterile 500 ml bottle.  
+12. Process the supernatant as follows:  
+    + Filter through 1 0.45 um PES membrane.  
+    + Add stir bar and stir aowly at 4 ℃ for 1 h,  then keep at 4℃ for 3 h without  stirring to allow full precipitation. Precipitation of the viruses can proceed overnight at 4 ℃ if needed.  
+    + Transfer the entire sample to 50 ml conical tubues and centrifuge at 2818g for 15 min at 4℃.  
+    + Discard the supernatant and resuspend the virus (small pellet) in 10 ml PBS + 0.001% puronic F68 + 200 mM NaCl. Pipet back and forth to resuspend the virus completely.  
+    + Keep resuspended pellet on ice.  
+    
+13. Process the cell pellet as follows:  
+    + Resuspend and lyse the cells by adding 10 ml of PBS +0.001% pluronic F68 + 200 mM NaCl and sonicating 4 x 1 sec pulses with at least 15 minutes on ice between each pulse, 50% amplitude. Return to ice between each sonication to avoid overheating of the sample.  
+    + Pellet cell debris by centrifugation at 3220 g for 5 min at 4 ℃.  
+    + Transfer the cleared lysate to the tube containing the resuspended virus from step 12 above.  
+    
+14. Add 50 units of benzonase per ml of viral suspension in PBS (you should have ~ 20 ml from steps 12 & 13). Benzonase is an endonuclease that will degrade any residual DNA carried over from the packing process.  
+
+15. Incubate at 37 ℃ for 45 min.  
+16. Transfer the viral suspension to centrifuge tubes and centrifuge at 4℃ at2415g for 10 min.  
+17. Transfer the clarified supernatant to a new tube and proceed with purification.  
+    > Note: an aliquot of the solution can be kept for qPCR to determine the vector loss due to the purification. Please not that  regents presents in the media may impair PCR efficiency.  
+    
+18. You are now ready to purify your prep. The clarified supernatant can be kept overnight at 4 ℃ before proceeding with the purification protocol.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

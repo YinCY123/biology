@@ -1,0 +1,23 @@
+---
+title: "Sequencing"
+author: "yincy"
+date: "2022-12-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 1st generation: **Sanger sequencing**.  
+1. add single-stranded DNA sequence to four test tubes.  
+2. Each tube contain all dNTPs plus one ddNTP.  
+
+# 2nd Generation: Illumina Sequencing Sequencing by Synthesis
+1. DNA fragment  
+2. add adpator
+3. load to the flow cell
+4. cluster generation by bridge PCR
+5. 
+
+

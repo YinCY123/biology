@@ -1,0 +1,32 @@
+---
+title: "Sequence-similarity-and-identity"
+author: "yincy"
+date: "2023-01-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Sequence alignment
+The alignment of biological sequences is probably the most important and most accomplished in the field of bioinformatics. Their utimate goal is to determine the similarity between different sequences.  
+
+
+# Sequence Similarity and Sequence Identity
+For nucleotide sequence (DNA and RNA): Both words have same meaning.  
+
+For protein sequences: both wordds have different meanings  
+
+- Identity: % of exact matches between two aligned sequences.  
+- Similarity: % of aligned residuals that share similar characteristics.  
+
+
+
+
+
+
+
+
+
